@@ -25,12 +25,21 @@
     <name>unmanbearpig's Space to Control_L</name>
     <appendix>(+ When you type Space only, send Space) when there are no modifiers</appendix>
     <identifier>remap.unmanbearpig.space2controlL_space_nomodifiers</identifier>
-    <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::CONTROL_L, KeyCode::SPACE</autogen>
     <modifier_not>
       ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
       ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
       ModifierFlag::SHIFT_L,   ModifierFlag::SHIFT_R,
     </modifier_not>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::SPACE,
+      KeyCode::VK_LAZY_CONTROL_L,
+      KeyCode::SPACE,
+    </autogen>
+    <block>
+      <modifier_only>ModifierFlag::CONTROL_L</modifier_only>
+      <autogen>__BlockUntilKeyUp__ KeyCode::SPACE</autogen>
+    </block>
   </item>
 
   <item>

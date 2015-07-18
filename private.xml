@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <root>
+  <appdef>
+    <appname>SPOTLIGHT</appname>
+    <equal>com.apple.Spotlight</equal>
+  </appdef>
+
   <item>
     <name>unmanbearpig's Dvorak's Control+PNBF to Up/Down/Left/Right</name>
     <appendix>(except Emacs, Terminal, Virtual, RDC, X11, Eclipse, Firefox) when there are no modifiers</appendix>
@@ -21,6 +26,18 @@
     <appendix>(+ When you type Space only, send Space) when there are no modifiers</appendix>
     <identifier>remap.unmanbearpig.space2controlL_space_nomodifiers</identifier>
     <autogen>__KeyOverlaidModifier__ KeyCode::SPACE, KeyCode::CONTROL_L, KeyCode::SPACE</autogen>
+    <modifier_not>
+      ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
+      ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
+      ModifierFlag::SHIFT_L,   ModifierFlag::SHIFT_R,
+    </modifier_not>
+  </item>
+
+  <item>
+    <name>unmanbearpig's C-g to quit Spotlight</name>
+    <identifier>remap.unmanbearpig.c-g2esc_in_spotlight</identifier>
+    <only>SPOTLIGHT</only>
+    <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
     <modifier_not>
       ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
       ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,

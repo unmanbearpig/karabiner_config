@@ -44,9 +44,9 @@
   </item>
 
   <item>
-    <name>unmanbearpig's C-g to quit Spotlight</name>
+    <name>unmanbearpig's C-g to ESC in Spotlight and Safari</name>
     <identifier>remap.unmanbearpig.c-g2esc_in_spotlight</identifier>
-    <only>SPOTLIGHT</only>
+    <only>SPOTLIGHT, SAFARI</only>
     <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
     <modifier_not>
       ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
@@ -62,6 +62,28 @@
     <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L </autogen>
     <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L </autogen>
     <modifier_not>
+      ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
+    </modifier_not>
+  </item>
+
+  <item>
+    <name>unmanbearpig's M-S-right, C-S-left for next/prev tab in Safari</name>
+    <identifier>remap.unmanbearpig.c-s-left-c-s-right-for-next-prev-tab-in-safari</identifier>
+    <only>SAFARI</only>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
+    <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
+    <modifier_not>
+      ModifierFlag::CONTROL_L,  ModifierFlag::CONTROL_R,
+    </modifier_not>
+  </item>
+
+  <item>
+    <name>unmanbearpig's C-s for search in Safari</name>
+    <identifier>remap.unmanbearpig.c-s-for-search-in-safari</identifier>
+    <only>SAFARI</only>
+    <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::Y, ModifierFlag::COMMAND_L</autogen>
+    <modifier_not>
+      ModifierFlag::COMMAND_L,  ModifierFlag::COMMAND_R,
       ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
     </modifier_not>
   </item>

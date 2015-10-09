@@ -54,4 +54,15 @@
       ModifierFlag::SHIFT_L,   ModifierFlag::SHIFT_R,
     </modifier_not>
   </item>
+
+  <item>
+    <name>unmanbearpig's C-S-n, C-S-p for next/prev tab</name>
+    <identifier>remap.unmanbearpig.c-s-n-c-s-p-for-next-prev-tab</identifier>
+    <not>EMACS, TERMINAL, REMOTEDESKTOPCONNECTION, X11</not>
+    <autogen>__KeyToKey__ KeyCode::L, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L </autogen>
+    <autogen>__KeyToKey__ KeyCode::R, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L </autogen>
+    <modifier_not>
+      ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
+    </modifier_not>
+  </item>
 </root>

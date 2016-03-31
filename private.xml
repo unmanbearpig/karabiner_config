@@ -5,6 +5,11 @@
     <equal>com.apple.Spotlight</equal>
   </appdef>
 
+  <appdef>
+    <appname>SAFARI_TECHNOLOGY_PREVIEW</appname>
+    <equal>com.apple.SafariTechnologyPreview</equal>
+  </appdef>
+
   <item>
     <name>unmanbearpig's Dvorak's Control+PNBF to Up/Down/Left/Right</name>
     <appendix>(except Emacs, Terminal, Virtual, RDC, X11, Eclipse, Firefox) when there are no modifiers</appendix>
@@ -46,7 +51,7 @@
   <item>
     <name>unmanbearpig's C-g to ESC in Spotlight and Safari</name>
     <identifier>remap.unmanbearpig.c-g2esc_in_spotlight</identifier>
-    <only>SPOTLIGHT, SAFARI</only>
+    <only>SPOTLIGHT, SAFARI, SAFARI_TECHNOLOGY_PREVIEW</only>
     <autogen>__KeyToKey__ KeyCode::U, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::ESCAPE</autogen>
     <modifier_not>
       ModifierFlag::COMMAND_L, ModifierFlag::COMMAND_R,
@@ -69,7 +74,7 @@
   <item>
     <name>unmanbearpig's M-S-right, C-S-left for next/prev tab in Safari</name>
     <identifier>remap.unmanbearpig.c-s-left-c-s-right-for-next-prev-tab-in-safari</identifier>
-    <only>SAFARI</only>
+    <only>SAFARI, SAFARI_TECHNOLOGY_PREVIEW</only>
     <autogen>__KeyToKey__ KeyCode::CURSOR_RIGHT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L</autogen>
     <autogen>__KeyToKey__ KeyCode::CURSOR_LEFT, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION | MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::TAB, ModifierFlag::CONTROL_L | ModifierFlag::SHIFT_L</autogen>
     <modifier_not>
@@ -80,7 +85,7 @@
   <item>
     <name>unmanbearpig's C-s for search in Safari</name>
     <identifier>remap.unmanbearpig.c-s-for-search-in-safari</identifier>
-    <only>SAFARI</only>
+    <only>SAFARI, SAFARI_TECHNOLOGY_PREVIEW</only>
     <autogen>__KeyToKey__ KeyCode::SEMICOLON, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::Y, ModifierFlag::COMMAND_L</autogen>
     <modifier_not>
       ModifierFlag::COMMAND_L,  ModifierFlag::COMMAND_R,

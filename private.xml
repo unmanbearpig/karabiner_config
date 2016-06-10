@@ -27,6 +27,30 @@
   </item>
 
   <item>
+    <name>Numpad Overlay</name>
+    <item>
+      <name>Numpad Overlay</name>
+      <appendix>Overlay 1234567890 onto mwvhtngcr</appendix>
+      <identifier vk_config="true">notsave.numpad_overlay</identifier>
+      <autogen>__KeyToKey__ KeyCode::M, KeyCode::KEY_1</autogen>
+      <autogen>__KeyToKey__ KeyCode::COMMA, KeyCode::KEY_2</autogen>
+      <autogen>__KeyToKey__ KeyCode::DOT, KeyCode::KEY_3</autogen>
+      <autogen>__KeyToKey__ KeyCode::J, KeyCode::KEY_4</autogen>
+      <autogen>__KeyToKey__ KeyCode::K, KeyCode::KEY_5</autogen>
+      <autogen>__KeyToKey__ KeyCode::L, KeyCode::KEY_6</autogen>
+      <autogen>__KeyToKey__ KeyCode::U, KeyCode::KEY_7</autogen>
+      <autogen>__KeyToKey__ KeyCode::I, KeyCode::KEY_8</autogen>
+      <autogen>__KeyToKey__ KeyCode::O, KeyCode::KEY_9</autogen>
+      <autogen>__KeyToKey__ KeyCode::N, KeyCode::KEY_0</autogen>
+    </item>
+    <item>
+      <name>Hold fn+mwvhtngcr; to 1234567890</name>
+      <identifier>remap.fn_to_homerow_numbers</identifier>
+      <autogen>__KeyOverlaidModifier__ KeyCode::FN, KeyCode::VK_CONFIG_SYNC_KEYDOWNUP_notsave_numpad_overlay, KeyCode::FN</autogen>
+    </item>
+  </item>
+
+  <item>
     <name>unmanbearpig's Space to Control_L</name>
     <appendix>(+ When you type Space only, send Space) when there are no modifiers</appendix>
     <identifier>remap.unmanbearpig.space2controlL_space_nomodifiers</identifier>

@@ -116,4 +116,11 @@
       ModifierFlag::OPTION_L,  ModifierFlag::OPTION_R,
     </modifier_not>
   </item>
+
+  <item>
+    <name>unmanbearpig's Switch Fn and Esc</name>
+    <identifier>remap.fnandesc</identifier>
+    <autogen>__KeyToKey__ KeyCode::FN, KeyCode::ESCAPE</autogen>
+    <autogen>__KeyToKey__ KeyCode::ESCAPE, KeyCode::FN</autogen>
+  </item>
 </root>
